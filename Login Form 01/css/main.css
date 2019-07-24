@@ -1,0 +1,243 @@
+/*Start Fonts*/
+/* Roboto thin */
+@font-face {
+    font-family: "Roboto";
+    src: url("../font/Roboto-Thin.eot");
+    src: url("../font/Roboto-Thin.eot?#iefix") format('embedded-opentype'),
+         url("../font/Roboto-Thin.woff2") format('woff2'),
+         url("../font/Roboto-Thin.woff") format('woff'),
+         url("../font/Roboto-Thin.ttf") format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+/* Roboto light */
+@font-face {
+    font-family: "Roboto";
+    src: url("../font/Roboto-Light.eot");
+    src: url("../font/Roboto-Light.eot?#iefix") format('embedded-opentype'),
+         url("../font/Roboto-Light.woff2") format('woff2'),
+         url("../font/Roboto-Light.woff") format('woff'),
+         url("../font/Roboto-Light.ttf") format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+/* Roboto medium */
+@font-face {
+    font-family: "Roboto";
+    src: url("../font/Roboto-Medium.eot");
+    src: url("../font/Roboto-Medium.eot?#iefix") format('embedded-opentype'),
+         url("../font/Roboto-Medium.woff2") format('woff2'),
+         url("../font/Roboto-Medium.woff") format('woff'),
+         url("../font/Roboto-Medium.ttf") format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+/* Roboto regular */
+@font-face {
+    font-family: "Roboto";
+    src: url("../font/Roboto-Regular.eot");
+    src: url("../font/Roboto-Regular.eot?#iefix") format('embedded-opentype'),
+         url("../font/Roboto-Regular.woff2") format('woff2'),
+         url("../font/Roboto-Regular.woff") format('woff'),
+         url("../font/Roboto-Regular.ttf") format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+/* Roboto bold */
+@font-face {
+    font-family: "Roboto";
+    src: url('../font/Roboto-Bold.eot');
+    src: url('../font/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../font/Roboto-Bold.woff2') format('woff2'),
+         url('../font/Roboto-Bold.woff') format('woff'),
+         url('../font/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+/*End Fonts*/
+/*Start Colors*/
+:root
+{
+	--main-color: #47d147;
+}
+/*End Colors*/
+*
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	background: url('../img/bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+/*Start Login Form*/
+.loginform-wrapper
+{
+	background: rgba(122, 113, 112, 0.7);
+	width: 280px;
+	min-width: 215px;
+	max-width: 90%;
+	border: .5px solid #000;
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 1px 2px #e7e4e5;
+	        box-shadow: inset 0 1px 2px #e7e4e5;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+}
+.loginform-wrapper .header
+{
+	padding: .7rem 0;
+	text-align: center;
+	-webkit-box-shadow: 0 1px .7px #e7e4e5;
+	        box-shadow: 0 1px .7px #e7e4e5;
+	border-bottom: 1px solid #3f4148;
+	position: relative;
+}
+.loginform-wrapper .header p
+{
+	color: #f5f4f3;
+	font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+	font-weight: 300;
+	letter-spacing: 1px;
+	font-size: 1rem;
+}
+.loginform-wrapper .header a
+{
+	color: #473f3b;
+	text-decoration: none;
+	font-size: 2rem;
+	font-weight: bold;
+	text-shadow: 0 1px .05px #e7e4e5;
+	position: absolute;
+	top: .15rem;
+	right: .5rem;
+}
+.loginform-wrapper .content
+{
+	padding: 1.5rem 1.7rem;
+}
+.loginform-wrapper .content .form-group
+{
+	margin: 0 0 1rem 0;
+	-webkit-box-shadow: 0 1px .05px #e7e4e5;
+	        box-shadow: 0 1px .05px #e7e4e5;
+	border: 1px solid #3f4148;
+	border-radius: 5px;
+	padding: .5rem .7rem;
+	position: relative;
+}
+.loginform-wrapper .content .form-group:last-child
+{
+	margin: 0;
+}
+.loginform-wrapper .content .form-group .icon
+{
+	display: inline-block;
+	width: 10%;
+	height: auto;
+	font-size: 1.3rem;
+	color: #a4a7a8;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+}
+.loginform-wrapper .content .form-group input
+{
+	width: 80%;
+	height: auto;
+	padding: .25rem .4rem;
+	border: none;
+	outline: 0;
+	background: transparent;
+	color: #a4a7a8;
+	font-size: .9rem;
+	position: relative;
+	z-index: 2;
+}
+.loginform-wrapper .content .form-group input::-webkit-input-placeholder
+{
+	color: #a4a7a8;
+	font-size: .8rem;
+}
+.loginform-wrapper .content .form-group input:-ms-input-placeholder
+{
+	color: #a4a7a8;
+	font-size: .8rem;
+}
+.loginform-wrapper .content .form-group input::-ms-input-placeholder
+{
+	color: #a4a7a8;
+	font-size: .8rem;
+}
+.loginform-wrapper .content .form-group input::placeholder
+{
+	color: #a4a7a8;
+	font-size: .8rem;
+}
+.loginform-wrapper .content .form-group input:focus, .icon
+{
+	color: #fff;
+}
+.loginform-wrapper .content .form-group input:focus + .background
+{
+	background: #514c4f;
+}
+.loginform-wrapper .content .form-group .background
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	-webkit-box-shadow: inset 0 1px 5px #766f73;
+	        box-shadow: inset 0 1px 5px #766f73;
+	-webkit-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+.loginform-wrapper .footer
+{
+	text-align: center;
+}
+.loginform-wrapper .footer .forgot-pass
+{
+	display: block;
+	margin: 1.7rem 0;
+	font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+	font-weight: 200;
+	font-size: .75rem;
+	color: #dedede;
+	text-decoration: none;
+}
+.loginform-wrapper .footer .forgot-pass:hover
+{
+	text-decoration: underline;
+}
+.loginform-wrapper .footer .login-btn
+{
+	display: block;
+	width: 100%;
+	height: auto;
+	padding: .7rem 0;
+	border-radius: 5px;
+	border: 1px solid #3f4148; 
+	background: -webkit-gradient(linear, left top, left bottom, from(#77a033), color-stop(#6e962e), color-stop(#668d28), color-stop(#5d8323), to(#557a1e)); 
+	background: -webkit-linear-gradient(top, #77a033, #6e962e, #668d28, #5d8323, #557a1e); 
+	background: -o-linear-gradient(top, #77a033, #6e962e, #668d28, #5d8323, #557a1e); 
+	background: linear-gradient(to bottom, #77a033, #6e962e, #668d28, #5d8323, #557a1e);
+	-webkit-box-shadow: inset 0 1px .7px #e7e4e5;
+	        box-shadow: inset 0 1px .7px #e7e4e5;
+	color: #cfd4c9;
+	font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+	font-weight: 200;
+	font-size: .85rem;
+	cursor: pointer;
+}
+/*End Login Form*/
